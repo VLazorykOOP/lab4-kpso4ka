@@ -665,6 +665,17 @@ namespace Program
                 if (arr[i].IsSquare()) squares++;
             }
             Console.WriteLine($"Squares: {squares}");
+            Console.WriteLine($"Index[1]: {arr[0][1]}");
+            Console.WriteLine("Triangle A: " + arr[0]);
+            Console.WriteLine("Triangle B: " + arr[1]);
+            arr[0]++;
+            Console.WriteLine("++: " + arr[0]);
+            arr[0]--;
+            Console.WriteLine("--: " + arr[0]);
+            Console.WriteLine(arr[0] ? "Triangle A exists" : "Triangle A does not exists");
+            Console.WriteLine(arr[1] ? "Triangle B exists" : "Triangle B does not exists");
+            arr[1] = arr[1] * 2;
+            Console.WriteLine("Triangle B * 2: " + arr[1]);
             Console.WriteLine();
 
             var arrA = new VectorFloat();
